@@ -5,7 +5,7 @@ using UnityEngine;
 public class AnimationBoss : MonoBehaviour
 {
     public GameObject theSpeedplate;
-
+    
     //private void Update()
     //{
     //    if (Input.GetKeyDown(KeyCode.Keypad1))
@@ -19,6 +19,14 @@ public class AnimationBoss : MonoBehaviour
     //        theSpeedplate.GetComponent<Animator>().Play("2_LeftRightHalvesExpand");
     //    }
     //}
+    
+    
+
+    public void Play0SPMoveIn()
+    {
+        theSpeedplate.GetComponent<Animator>().Play("Speedplate-MoveIn");
+        Debug.Log("Speedplate moved in");
+    }
 
     public void Play1Pins()
     {
